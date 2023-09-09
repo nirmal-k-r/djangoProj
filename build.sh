@@ -7,4 +7,8 @@ pip install -r requirements.txt
 
 python manage.py collectstatic --no-input
 python manage.py migrate
-python setup.py
+python manage.py createsuperuserwithpassword \
+        --username nirmal \
+        --password 12345 \
+        --email nirmal@test.com \
+        --preserve

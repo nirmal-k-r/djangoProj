@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'polls',
     'authentication'
 ]
+INSTALLED_APPS += ("django_createsuperuserwithpassword", )
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
