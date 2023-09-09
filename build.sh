@@ -10,5 +10,5 @@ python manage.py migrate
 
 if [[ $CREATE_SUPERUSER ]];
 then
-  python manage.py createsuperuser --no-input --username nirmal --password 12345
+  python manage.py createsuperuser --no-input --username nirmal
 fi
