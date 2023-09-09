@@ -92,12 +92,12 @@ WSGI_APPLICATION = 'titanic.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # DATABASES = {
 #   'default': {
@@ -109,6 +109,16 @@ DATABASES = {
 #     'PORT': '5432',
 #   }
 # }
+DATABASES = {
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'titanic',
+    'USER': 'nirmal',
+    'PASSWORD': '6Ag08BLz89anrnreKBxNZxQUPc6Tn10q',
+    'HOST': 'dpg-cju1b0d175es73f7e5i0-a.singapore-postgres.render.com',
+    'PORT': '5432',
+  }
+}
 
 #titanic 12345
 
